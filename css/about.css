@@ -1,0 +1,29 @@
+/* css for aboutme */
+.about {
+    width: 60%;
+    margin: 5rem auto 0 auto;
+    padding: 40px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about img {
+    height: 300px;
+    margin: auto 30px auto auto;
+}
+
+.about h1 {
+    color: #4ca1af;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* css for medium devices */
+@media screen and (max-width: 800px) {
+    .row {
+        flex-direction: column;
+    }
+}

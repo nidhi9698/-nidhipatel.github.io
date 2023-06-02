@@ -1,0 +1,79 @@
+/* css for project */
+section h1 {
+    color: #4ca1af;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2em;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project {
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.project-col {
+    position: relative;
+    width: 80%;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.project-col img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.layer:hover {
+    background: white;
+    opacity: 0.8;
+}
+
+.layer ul {
+    width: 100%;
+    color: #000;
+    font-size: 18px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+}
+
+.layer:hover ul {
+    bottom: 49%;
+    opacity: 1;
+}
+
+@media screen and (max-width: 1000px) {
+    .layer ul {
+        font-size: 10px;
+        bottom: 20%;
+    }
+}
+
+/* css for medium devices */
+@media screen and (max-width: 800px) {
+    .row {
+        flex-direction: column;
+    }
+}
